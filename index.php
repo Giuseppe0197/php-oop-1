@@ -87,6 +87,20 @@ RISULTATO ATTESO:
 
     $movie3 -> director = "Robin Budd";
 
+    /* stampiamo solo i nomi dei film */
+    
+    echo "<h3> nomi dei film con eventuale sottotitolo: </h3>";
+
+    echo $movie1 -> getFullTitle() . "<br>";
+
+    echo $movie2 -> getFullTitle() . "<br>";
+
+    echo $movie3 -> getFullTitle() . "<br>";
+
+    /* stampiamo anche il regista */
+
+    echo "<h3> nomi dei film con eventuale regista: </h3>";
+
     echo $movie1 . "<br>";
 
     echo $movie2 . "<br>";
