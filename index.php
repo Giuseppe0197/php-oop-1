@@ -48,7 +48,7 @@ RISULTATO ATTESO:
         }
 
         public function getFullTitle(){
-            if ($this -> subtitle <> ""){
+            if ($this -> subtitle != ""){
                 return $this -> title . ": " . $this -> subtitle;
             } else {
                 return $this -> title;
@@ -56,7 +56,7 @@ RISULTATO ATTESO:
         }
 
         public function __toString(){
-            if ($this -> director <> ""){
+            if ($this -> director != ""){
                 return $this -> getFullTitle() . " | " . $this -> director;
             } else {
                 return $this -> getFullTitle() . " | " . "???";
